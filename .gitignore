@@ -1,0 +1,46 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+*.egg
+*.pyo
+*.pyd
+*.whl
+build/
+dist/
+
+# Environments
+.venv/
+venv/
+ENV/
+env/
+
+# Caches and tooling
+.pytest_cache/
+.mypy_cache/
+.cache/
+pip-wheel-metadata/
+.coverage
+coverage.xml
+htmlcov/
+
+# Jupyter/Notebooks
+.ipynb_checkpoints/
+
+# Editors/IDE
+.vscode/
+.idea/
+
+# Streamlit
+.streamlit/
+
+# Dotenv
+.env
+.env.*
+
+# Logs
+*.log
