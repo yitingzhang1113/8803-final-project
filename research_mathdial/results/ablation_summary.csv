@@ -1,0 +1,5 @@
+Model,Training Loss,Time (min),Improvement vs Baseline
+Baseline,1.3053748111175412,5.3,Baseline
++CoT,1.2813785003536522,5.3,1.8%
++Dependency,0.8997991616833848,6.0,31.1%
+Full Pedagogy,0.9791129155414094,5.6,25.0%
