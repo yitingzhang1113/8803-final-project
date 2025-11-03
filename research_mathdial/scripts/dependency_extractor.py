@@ -182,11 +182,13 @@ def parse_conversation(conversation_str: str) -> List[Dict]:
             continue
         
         # Match role and text
-        match = re.match(r"^(Teacher|Student|Steven|Cody|Stephanie|DeAndre|Winnie|Luca|John|Nancy|Bruno|Monty|Wanda|James|Jason):\s*(\([^)]+\))?(.+)$", part, re.I)
+        # Generic matcher: anything ending with ":" is treated as a speaker label.
+        # Normalize all non-Teacher speakers to Student.
+        match = re.match(r"^([A-Za-z]+):\s*(\([^)]+\))?(.+)$", part)
         if match:
             role = match.group(1)
             # Normalize role names (student names -> Student)
-            if role not in ["Teacher", "Student"]:
+            if role != "Teacher":
                 role = "Student"
             text = match.group(3).strip()
             turns.append({"role": role, "text": text})

@@ -1,8 +1,0 @@
-{"turn_id": 0, "operation": "calculate", "depends_on": null, "confidence": 0.5, "qid": "5000794"}
-{"turn_id": 1, "operation": "other", "depends_on": 0, "confidence": 0.4, "qid": "5000794"}
-{"turn_id": 2, "operation": "other", "depends_on": 1, "confidence": 0.6, "qid": "5000794"}
-{"turn_id": 3, "operation": "other", "depends_on": 2, "confidence": 0.6, "qid": "5000794"}
-{"turn_id": 4, "operation": "other", "depends_on": 3, "confidence": 0.6, "qid": "5000794"}
-{"turn_id": 0, "operation": "calculate", "depends_on": null, "confidence": 0.5, "qid": "5000195"}
-{"turn_id": 1, "operation": "other", "depends_on": 0, "confidence": 0.4, "qid": "5000195"}
-{"turn_id": 2, "operation": "calculate", "depends_on": 1, "confidence": 0.51, "qid": "5000195"}
